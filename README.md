@@ -21,8 +21,8 @@ Este proyecto es un ejemplo básico de un servidor WebSocket implementado con **
 
 1. Clona el repositorio:
    ```bash
-   git clone <url-del-repositorio>
-   cd <nombre-del-proyecto>
+   git clone <https://github.com/CarlosArgudo1D/websocket.git>
+   cd <websocket>
 
 ## Instalación de dependencias y ejecución del servidor
 
@@ -48,4 +48,15 @@ Los clientes pueden conectarse y enviar mensajes con el evento "chatMessage".
 Cuando el servidor recibe un mensaje, lo imprime en consola y lo reenvía a todos los clientes conectados (broadcast).
 
 
+> El archivo HTML de prueba (`client.html`) se encuentra incluido en el mismo proyecto, en la carpeta `html/` (o en la raíz del proyecto)
+
+## Abrir el cliente HTML existente
+
+Una vez clonado el proyecto y con el servidor corriendo (`npm run start:dev`):
+
+1. En tu explorador de archivos, navega hasta la carpeta `html` que ya está en el repositorio.
+2. Haz **doble clic** sobre `client.html`.
+3. El navegador predeterminado abrirá la página y establecerá la conexión WebSocket automáticamente con `http://localhost:3000`.
+4. Para verificarlo, abre la consola de desarrollador (F12) y busca el mensaje de “Conectado al servidor WebSocket”.  
+5. Envía un mensaje y comprueba que aparece en la lista en tiempo real. Puedes repetir en otra pestaña para ver el broadcast.  
 
